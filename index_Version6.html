@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Illusion Designs | Graphic Design Portfolio</title>
+  <meta name="description" content="Portfolio of graphic designer at illusiondesigns.art"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-red: #ea0029;
+      --dark-bg: #090909;
+      --panel-bg: #161616;
+      --card-bg: #222;
+      --text-main: #fafafa;
+      --text-faint: #b8b8b8;
+      --accent: var(--primary-red);
+    }
+    body {
+      background: var(--dark-bg);
+      color: var(--text-main);
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem 1rem;
+      background: linear-gradient(180deg, var(--primary-red) 0%, transparent 100%);
+    }
+    header h1 {
+      font-size: 2.7rem;
+      letter-spacing: 2px;
+      margin-bottom: 0.3rem;
+      color: var(--primary-red);
+      text-shadow: 0 2px 16px rgba(234,0,41,0.15);
+    }
+    header h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--text-faint);
+      margin-top: 0;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      color: var(--primary-red);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-size: 1.08rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    nav a:hover {
+      color: #fff;
+      border-bottom: 2px solid var(--primary-red);
+    }
+    section {
+      max-width: 950px;
+      margin: 0 auto 2rem auto;
+      padding: 2rem 1rem;
+      background: var(--panel-bg);
+      border-radius: 12px;
+      box-shadow: 0 3px 30px #0909094d;
+    }
+    section h3 {
+      font-size: 1.5rem;
+      margin-top: 0;
+      color: var(--primary-red);
+      letter-spacing: 1px;
+      text-shadow: 0 1px 4px #7a061878;
+    }
+    #portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: center;
+      margin-top: 1.6rem;
+    }
+    .portfolio-item {
+      width: min(290px, 100%);
+      background: var(--card-bg);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 14px #0004;
+      border: 2px solid #19191a;
+      transition: transform 0.15s, border 0.2s;
+    }
+    .portfolio-item:hover {
+      transform: scale(1.04);
+      border: 2px solid var(--primary-red);
+    }
+    .portfolio-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 2px solid var(--primary-red);
+      background: #000;
+    }
+    .portfolio-item .caption {
+      padding: 0.7rem 1rem;
+      font-size: 1rem;
+      color: var(--text-faint);
+      min-height: 2.5em;
+    }
+    #contact {
+      text-align: center;
+    }
+    .contact-links a {
+      color: var(--primary-red);
+      text-decoration: none;
+      margin: 0 0.7rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border-bottom: 1.5px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .contact-links a:hover {
+      color: #fff;
+      border-bottom: 1.5px solid var(--primary-red);
+    }
+    @media (max-width: 700px) {
+      section {
+        padding: 1rem 0.2rem;
+      }
+      #portfolio {
+        gap: 0.8rem;
+      }
+      .portfolio-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Illusion Designs</h1>
+    <h2>Graphic Design Portfolio</h2>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      Hi! I’m a passionate graphic designer at <strong>illusiondesigns.art</strong> specializing in creative visual solutions for brands and personal projects. I believe in the power of a limited color palette: bold reds, sharp blacks, and clean design that makes every project unique. With years of experience in logos, posters, digital art, and more, I'm ready to bring your ideas to life.
+    </p>
+  </section>
+  <section id="portfolio">
+    <h3>Portfolio</h3>
+    <div id="portfolio">
+      <div class="portfolio-item">
+        <img src="evia-jewels-branding.png" alt="Evia Jewels Branding Board"/>
+        <div class="caption">Brand identity board for Evia Jewels – logo, color palette, packaging & visual concept</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio1.jpg" alt="Project 1"/>
+        <div class="caption">Bold logo design for a tech startup</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio2.jpg" alt="Project 2"/>
+        <div class="caption">Striking poster art for a music event</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio3.jpg" alt="Project 3"/>
+        <div class="caption">Minimalist business card concept</div>
+      </div>
+      <!-- Add more portfolio items by duplicating this block -->
+    </div>
+    <p style="margin-top:1.5rem; color:#b62626; text-align:center">
+      Want more? Follow my socials or contact me for custom work.
+    </p>
+  </section>
+  <section id="contact">
+    <h3>Contact</h3>
+    <div class="contact-links">
+      <a href="mailto:your@email.com">Email</a>
+      <a href="https://instagram.com/01dynamite" target="_blank">Instagram</a>
+      <a href="https://behance.net/yourprofile" target="_blank">Behance</a>
+      <!-- Add more links as needed -->
+    </div>
+    <p style="color:#842020; margin-top:1.2rem">Based in [Your City] &middot; Available for freelance and collaborations</p>
+  </section>
+  <footer style="font-size:0.95rem; color:#393939; text-align:center; padding:2rem 0 1rem 0">
+    &copy; 2025 Illusion Designs &bull; Site by you
+  </footer>
+</body>
+</html>
